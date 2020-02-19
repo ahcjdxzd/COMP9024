@@ -1,0 +1,42 @@
+Problem6. 
+
+Given the following definition:int data[12] = {5, 3, 6, 2, 7, 4, 9, 1, 8};
+and assuming that&data[0] == 0x10000, 
+what are the values of the following expressions?
+
+data + 4
+*data + 4
+*(data + 4)
+data[4]
+*(data + *(data + 3))
+data[data[2]]
+
+
+
+Hi Prof Thielscher,
+
+I am struggling to understand the solution to this part of question 5a of problem set 2.
+
+data + 4	== 0x10000 + 4 * 4 bytes == 0x10010
+
+
+Tips:
+ints are 4 bytes and data+4 should give us the address of the 4th element. 
+If data[] were an array of chars, say, then data+4 would be 0x10004. 
+16 in hexadecimal is 10. 
+
+
+
+
+
+
+
+
+
+Solution:
+data + 4== 0x10000 + 4 * 4 bytes == 0x10010
+*data + 4== data[0] + 4 == 5 + 4 == 9
+*(data + 4)== data[4] == 7
+data[4]== 7
+*(data + *(data + 3))== *(data + data[3]) == *(data + 2) == data[2] == 6
+data[data[2]]== data[6] == 9Problem7. 
