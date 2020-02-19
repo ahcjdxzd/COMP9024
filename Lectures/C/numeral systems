@@ -2,3 +2,6 @@ binary(base 2)
 hexadecimal [ˌheksəˈdesɪml] (base 16)
 
 decimal(base 10) 
+
+
+echo "obase=输出进制数;ibase=输入进制数;输入的数字" | bc
